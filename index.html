@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Hacker City — Terminal</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Hacker City · 2083</h1>
+      <div class="subtitle">Text‑RPG · Simulated Hacking · Prototype</div>
+    </header>
+
+    <main>
+      <div id="terminal" class="terminal">
+        <div id="output" class="output"></div>
+      </div>
+
+      <div class="input-row">
+        <input id="input" class="cmd-input" placeholder="Type a command (help)" autocomplete="off" />
+        <button id="send" class="btn">Send</button>
+      </div>
+
+      <section class="help">
+        <strong>Quick commands:</strong>
+        <code>register email password</code> |
+        <code>login email password</code> |
+        <code>char create &lt;name&gt;</code> |
+        <code>jobs</code> |
+        <code>accept &lt;jobId&gt;</code> |
+        <code>cmd &lt;sessionId&gt; &lt;command&gt;</code>
+      </section>
+    </main>
+
+    <footer>
+      <small>Prototype — all hacking is simulated server‑side. No risk to your machine.</small>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
