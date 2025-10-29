@@ -1,3 +1,8 @@
+// Initialize Supabase client
+const SUPABASE_URL = "https://qdqrrkpkhdhjhwzewuza.supabase.co";
+const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFkcXJya3BraGRoamh3emV3dXphIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE3NjIwNTUsImV4cCI6MjA3NzMzODA1NX0.wFKgwtuSBKGj3_nARoL0SwPDhz_x3Etafm3vcPmKu0E";
+const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
 // app.js - simple terminal frontend for Hacker City prototype
 
 // === CONFIG ===
